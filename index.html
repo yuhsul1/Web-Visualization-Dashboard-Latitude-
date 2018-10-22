@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Analysis Visualization</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body style="background-color: lightgray">
+    
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand logo" href="index.html"> 
+                <span class="nav-color">Latitude</span></a>
+            </div>
+
+            <div class="nav navbar-nav navbar-right">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Plots<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="temperature.html">Max Temperature</a></li>
+                        <li><a href="humidity.html">Humidity</a></li>
+                        <li><a href="cloudiness.html">Cloudiness</a></li>
+                        <li><a href="wind_speed.html">Wind Speed</a></li>
+                    </ul>
+                </li>
+                <li><a href="comparison.html"> Comparison</a></li>
+                <li><a href="data.html"> Data</a></li>                                           
+            </div>
+        </div>      
+    </nav>
+
+    <div class = "container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+
+                    <h2>Summary: Lattitude vs. Weather Condition</h2>
+                    <hr>
+                    <img class="first image" src="City Latitude vs. Max Temperature.jpg" alt="first image" >
+                    <p class = "text">This is an analysis and visualization of weather of 400+ cities across the world. The purpose of this analysis is to visualize the effect of lattiude on different weather conditions, including cloudiness, temperature, wind speed, and humidity <br> 
+                    We first randomized created few thousands coordinates pairs and then used citypy to find the nearst cities to these coordinates pairs.
+                    After collecting these cities coordinates, we then used openweather api to find out the weather conditions of these cities.<br> 
+                    In conclusion, an we found out that except for temperature, there are not significant effects on cloudiness, windspeed, nor humidity with lattitude.</p>
+                    <br>        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                        <div class="panel-body">                                    
+                            <h2>Visualizations</h2>
+                            <hr>
+
+                            <div class="row" >
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="temperature.html"><img class = "img img-responsive" src="City Latitude vs. Max Temperature.jpg" style="width:100%" alt=""></a></div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="humidity.html"><img class = "img img-responsive" src="City Latitude vs. Humidity.jpg" style="width:100%" alt=""></a></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="cloudiness.html"><img class = "img img-responsive" src="City Latitude vs. Cloudiness.jpg" style="width:100%" alt=""></a></div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="wind_speed.html"><img class = "img img-responsive" src="City Latitude vs. Wind Speed.jpg" style="width:100%" alt=""></a></div>
+                            </div>
+                                
+                        </div>
+                </div>     
+            </div>    
+    </div>
+</body>
+</html>
