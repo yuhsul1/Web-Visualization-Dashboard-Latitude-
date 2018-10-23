@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>vs Humidity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: lightgray">
+    
+    <nav class="navbar navbar-default">
+        <div class="container" >
+            <div class="navbar-header" style = "background-color:rgb(46, 175, 175)">
+                <a class="navbar-brand logo" href="index.html"> 
+                <span class="nav-color" style = "color:white; font-size:125%; font-family:'Times New Roman', Times, serif; font-weight: bold;">Latitude</span></a>
+            </div>
+
+            <div class="nav navbar-nav navbar-right">
+                <li class="dropdown"><a class ="btn dropdown-toggle" data-toggle="dropdown" type ="button" aria-expanded="false" aria-haspopup="true">Plots<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="temperature.html">Max Temperature</a></li>
+                        <li><a href="humidity.html">Humidity</a></li>
+                        <li><a href="cloudiness.html">Cloudiness</a></li>
+                        <li><a href="wind_speed.html">Wind Speed</a></li>
+                    </ul>
+                </li>
+                <li><a href="comparison.html"> Comparison</a></li>
+                <li><a href="data.html"> Data</a></li>                                           
+            </div>
+        </div>      
+    </nav>
+
+
+    <div class = "container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="panel">
+                        <div class="panel-body">
+    
+                        <h2 style = "color:rgb(46, 175, 175);font-weight: bold;">Wind Speed VS Lattitude</h2>
+                        <hr>
+                        <img src="City Latitude vs. Wind Speed.jpg" width="350" alt="wind-image" >
+                        <p class = "text">Wind speed is evenly spread across different lattitude level.
+                            Windspeed seems to be lower across most level. However, there is slight trend of higher wind speed in equator.
+                            It is possible that there are more typhoons or tornado events happened at lower lattitudes, which lead to higher wind speed.
+                        </p>
+                        <br>        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel">
+                            <div class="panel-body">                                    
+                                <h2 style="color:rgb(46, 175, 175);font-weight: bold;">Visualizations</h2>
+                                <hr>
+    
+                                <div class="row" >
+                                    <div class="col-md-6 col-sm-6"><a href="temperature.html"><img src="City Latitude vs. Max Temperature.jpg" style="width:100%" alt=""></a></div>
+                                    <div class="col-md-6 col-sm-6"><a href="humidity.html"><img src="City Latitude vs. Humidity.jpg" style="width:100%" alt=""></a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6"><a href="cloudiness.html"><img src="City Latitude vs. Cloudiness.jpg" style="width:100%" alt=""></a></div>
+                                    <div class="col-md-6 col-sm-6"><a href="wind_speed.html"><img src="City Latitude vs. Wind Speed.jpg" style="width:100%" alt=""></a></div>
+                                </div>
+                                    
+                            </div>
+                    </div>     
+                </div>    
+        </div>
+    </div>
+</body>
+
+</html>
