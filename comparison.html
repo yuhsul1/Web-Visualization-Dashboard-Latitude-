@@ -36,41 +36,38 @@
 
     <div class = "container">
         <div class="row">
-            <div class="col-md-8">
-                <div class="panel">
-                    <div class="panel-body">
-
-                    <h2 style = "color:rgb(46, 175, 175);font-weight: bold;">Summary: Lattitude vs. Weather Condition</h2>
-                    <hr>
-                    <img src="City Latitude vs. Max Temperature.png " style= "float:left" width="350" alt="first image" >
-                    <p class = "text">This is an analysis and visualization of weather of 500+ cities across the world. 
-                    The purpose of this analysis is to visualize the effect of lattiude on different weather conditions, including cloudiness, temperature, wind speed, and humidity <br> 
-                    The first step of this experiment is randomly created few thousands coordinates pairs and then used citypy to find the nearst cities to these coordinates pairs.<br>
-                    After collecting these cities coordinates, we then used openweather api to find out the weather conditions of these cities by parsing the json file.<br>
-                    After collecting the numerical value of each of these file, we plotted the weather value against lattitude to visualize the correlation between our dataset.
-                    In conclusion, an we found out that except for temperature, there are not significant effects on cloudiness, windspeed, nor humidity with lattitude.</p>
-                    <br>        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
+            <div class ="col-md-12">
                 <div class="panel">
                         <div class="panel-body">                                    
-                            <h2 style="color:rgb(46, 175, 175);font-weight: bold;">Visualizations</h2>
+                            <h2 style="color:rgb(46, 175, 175);font-weight: bold;">Comparison Lattitude vs.</h2>                        
                             <hr>
 
+                            <div class ="row">
+                                <div class="col-md-6 col-sm-6">
+                                   <h5>Click any plot to get an in-depth analysis</h5> 
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6"><h3 style="text-align:center;color:rgb(46, 175, 175); font-weight: bold;">VS Temperature</h3></div>
+                                <div class="col-md-6 col-sm-6"><h3 style="text-align:center;color:rgb(46, 175, 175); font-weight: bold;">VS Humidity</h3></div>
+                            </div>
                             <div class="row" >
                                 <div class="col-md-6 col-sm-6 "><a href="temperature.html"><img src="City Latitude vs. Max Temperature.png" style="width:100%" alt=""></a></div>
                                 <div class="col-md-6 col-sm-6 "><a href="humidity.html"><img src="City Latitude vs. Humidity.png" style="width:100%" alt=""></a></div>
                             </div>
                             <div class="row">
+                                    <div class="col-md-6 col-sm-6"><h3 style="text-align:center;color:rgb(46, 175, 175); font-weight: bold;">VS Cloudiness</h3></div>
+                                    <div class="col-md-6 col-sm-6"><h3 style="text-align:center;color:rgb(46, 175, 175); font-weight: bold;">VS Wind Speed</h3></div>
+                            <div class="row">
                                 <div class="col-md-6 col-sm-6 "><a href="cloudiness.html"><img src="City Latitude vs. Cloudiness.png" style="width:100%" alt=""></a></div>
                                 <div class="col-md-6 col-sm-6 "><a href="wind_speed.html"><img src="City Latitude vs. Wind Speed.png" style="width:100%" alt=""></a></div>
                             </div>
-                                
+                                    
                         </div>
-                </div>     
-            </div>    
+                    </div>     
+                </div>
+            </div>
         </div>
     </div>
 </body>
